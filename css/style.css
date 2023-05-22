@@ -1,0 +1,33 @@
+h1:hover{
+	background: white;
+	margin-top: 40px;
+}
+h1{
+	margin-top: 40px;
+	color: black;
+	font-size: 40px;
+}
+#b{
+	width: 42px;
+	height: 42px;
+	font-size: 22px;
+	margin: 10px;
+	border-radius: 5px;
+	background: white;
+	color: blueviolet;
+}
+#table{
+	margin: 100px 550px;
+	padding: 10px;
+	background: black;
+	border-radius: 10px;
+
+}
+#tb{
+	width: 160px;
+	height: 30px;
+	font-size: 22px;
+}
+body{
+	background-color: skyblue;
+}

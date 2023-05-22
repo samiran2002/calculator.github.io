@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+	<script>
+		function clr() {
+	         let x=document.getElementById("tb").value="";
+      }
+        function see(x){
+	         document.getElementById("tb").value+=x;
+      }
+        function solve(){
+	         let z=document.getElementById("tb").value;
+             let y=eval(z);
+	         document.getElementById("tb").value=y;
+      }
+	</script>
+</head>
+<body onload="calc()">
+	<script>
+		function calc(){
+        	setTimeout(function() {alert("WELCOME TO MY CALCULATOR")},600);
+        }
+	</script>
+	<h1 align="center" onclick="calc()">CASIO</h1>
+  <table id="table">
+ 	<tr>
+ 		<td colspan="3"><input type="text" id="tb"></td>
+ 		<td><input type="button" value="C" id="b" onclick="clr()" ></td>
+ 	</tr>
+ 	<tr>
+ 		<td><input type="button" value="1" id="b" onclick="see('1')"></td>
+ 		<td><input type="button" value="2" id="b" onclick="see('2')"></td>
+ 		<td><input type="button" value="3" id="b" onclick="see('3')"></td>
+ 		<td><input type="button" value="/" id="b" onclick="see('/')"></td>
+ 	</tr>
+ 	<tr>
+ 		<td><input type="button" value="4" id="b" onclick="see('4')"></td>
+ 		<td><input type="button" value="5" id="b" onclick="see('5')"></td>
+ 		<td><input type="button" value="6" id="b" onclick="see('6')"></td>
+ 		<td><input type="button" value="-" id="b" onclick="see('-')"></td>
+ 	</tr><tr>
+ 		<td><input type="button" value="7" id="b" onclick="see('7')"></td>
+ 		<td><input type="button" value="8" id="b" onclick="see('8')"></td>
+ 		<td><input type="button" value="9" id="b" onclick="see('9')"></td>
+ 		<td><input type="button" value="+" id="b" onclick="see('+')"></td>
+ 	</tr>
+ 	<tr>
+ 		<td><input type="button" value="." id="b" onclick="see('.')"></td>
+ 		<td><input type="button" value="0" id="b" onclick="see('0')"></td>
+ 		<td><input type="button" value="=" id="b" onclick="solve('=')"></td>
+ 		<td><input type="button" value="*" id="b" onclick="see('*')"></td>
+ 	</tr>
+ </table>
+</body>
+</html>
