@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 	<script>
 		function clr() {
 	         let x=document.getElementById("tb").value="";
@@ -18,40 +22,37 @@
       }
 	</script>
 </head>
-<body onload="calc()">
-	<script>
-		function calc(){
-        	setTimeout(function() {alert("WELCOME TO MY CALCULATOR")},600);
-        }
-	</script>
-	<h1 align="center" onclick="calc()">CASIO</h1>
+<body>
+	<video autoplay loop muted plays-inline class="background-clip">
+		<source src="back.mp4" type="video/mp4">
+	</video>
   <table id="table">
  	<tr>
  		<td colspan="3"><input type="text" id="tb"></td>
- 		<td><input type="button" value="C" id="b" onclick="clr()" ></td>
+ 		<td><input type="button" value="C"  class="circle" onclick="clr()" ></td>
  	</tr>
  	<tr>
  		<td><input type="button" value="1" id="b" onclick="see('1')"></td>
  		<td><input type="button" value="2" id="b" onclick="see('2')"></td>
  		<td><input type="button" value="3" id="b" onclick="see('3')"></td>
- 		<td><input type="button" value="/" id="b" onclick="see('/')"></td>
+ 		<td><input type="button" value="/"  onclick="see('/')" class="circle"></td>
  	</tr>
  	<tr>
  		<td><input type="button" value="4" id="b" onclick="see('4')"></td>
  		<td><input type="button" value="5" id="b" onclick="see('5')"></td>
  		<td><input type="button" value="6" id="b" onclick="see('6')"></td>
- 		<td><input type="button" value="-" id="b" onclick="see('-')"></td>
+ 		<td><input type="button" value="-" onclick="see('-')" class="circle"></td>
  	</tr><tr>
  		<td><input type="button" value="7" id="b" onclick="see('7')"></td>
  		<td><input type="button" value="8" id="b" onclick="see('8')"></td>
  		<td><input type="button" value="9" id="b" onclick="see('9')"></td>
- 		<td><input type="button" value="+" id="b" onclick="see('+')"></td>
+ 		<td><input type="button" value="+"  onclick="see('+')" class="circle"></td>
  	</tr>
  	<tr>
  		<td><input type="button" value="." id="b" onclick="see('.')"></td>
  		<td><input type="button" value="0" id="b" onclick="see('0')"></td>
- 		<td><input type="button" value="=" id="b" onclick="solve('=')"></td>
- 		<td><input type="button" value="*" id="b" onclick="see('*')"></td>
+ 		<td><input type="button" value="=" id="b" onclick="solve('=')" ></td>
+ 		<td><input type="button" value="*"  onclick="see('*')" class="circle" id="m"></td>
  	</tr>
  </table>
 </body>
